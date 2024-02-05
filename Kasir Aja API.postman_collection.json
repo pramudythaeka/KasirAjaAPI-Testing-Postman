@@ -1,0 +1,3688 @@
+{
+	"info": {
+		"_postman_id": "03ba758b-5c69-4b4f-93ae-6d0834e35587",
+		"name": "Kasir Aja API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27616768"
+	},
+	"item": [
+		{
+			"name": "Authorization",
+			"item": [
+				{
+					"name": "Authorization",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"connection": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\": \"Rahayu Jaya\",\r\n   \"email\": \"rahayujaya@mail.com\",\r\n   \"password\": \"123adsfadf@\",\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}",
+							"host": [
+								"{{baseUrl}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Authorization",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"name\": \"Rahayu Jaya\",\r\n   \"email\": \"rahayujaya@mail.com\",\r\n   \"password\": \"123adsfadf@\",\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}",
+									"host": [
+										"{{baseUrl}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "content-length",
+									"value": "65"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 03:50:17 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"status\": \"Ok!\",\n        \"name\": \"kasirAja Api\",\n        \"version\": \"1.0.0\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\": \"Rahayu Jaya\",\r\n   \"email\": \"rahayujaya@mail.com\",\r\n   \"password\": \"123adsfadf@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/registration",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"registration"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Rahayu Jaya",
+									"description": "Username for the store",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "rahayujaya@mail.com",
+									"description": "email for the store",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "rahasia123",
+									"description": "password for the store",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Registration",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"name\": \"Rahayu Jaya\",\r\n   \"email\": \"rahayujaya@mail.com\",\r\n   \"password\": \"123adsfadf@\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/registration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"registration"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Rahayu Jaya",
+											"description": "Username for the store",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "rahayujaya@mail.com",
+											"description": "email for the store",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "rahasia123",
+											"description": "password for the store",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "118"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 04:11:48 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Toko berhasil didaftarkan\",\n    \"data\": {\n        \"name\": \"Rahayu Jaya\",\n        \"email\": \"rahayujaya@mail.com\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"email\": \"rahayujaya@mail.com\",\r\n   \"password\": \"123adsfadf@\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/authentications",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"authentications"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"email\": \"rahayujaya@mail.com\",\r\n   \"password\": \"123adsfadf@\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/authentications",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"authentications"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,Accept-Encoding,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "499"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 13:23:36 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Authentication berhasil ditambahkan\",\n    \"data\": {\n        \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI\",\n        \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.R08rf3gMzacdIjreH68S236uKbnNMO7YE1BLFhW5R0I\",\n        \"user\": {\n            \"id\": \"26f9e66d-ae78-4f17-9938-18cfba8812ee\",\n            \"name\": \"Rahayu Jaya\",\n            \"role\": \"admin\",\n            \"email\": \"rahayujaya@mail.com\",\n            \"officeId\": \"5a158665-a90a-4f98-9b60-e1d4177bad24\",\n            \"companyId\": \"145f9609-e995-49b1-814e-83427e495fff\",\n            \"company_name\": \"Rahayu Jaya\"\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Create user",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"kasir-rahayu\",\r\n    \"email\": \"kasirrahayu@mail.com\",\r\n    \"password\": \"rahasia123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"kasir-rahayu\",\r\n    \"email\": \"kasirrahayu@mail.com\",\r\n    \"password\": \"rahasia123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "137"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 13:26:39 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User berhasil ditambahkan\",\n    \"data\": {\n        \"userId\": \"69ded4f0-842f-44bb-96dc-1700abf9b9f8\",\n        \"name\": \"kasir-rahayu\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "User detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/69ded4f0-842f-44bb-96dc-1700abf9b9f8",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"69ded4f0-842f-44bb-96dc-1700abf9b9f8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User detail",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/69ded4f0-842f-44bb-96dc-1700abf9b9f8",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"69ded4f0-842f-44bb-96dc-1700abf9b9f8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "content-length",
+									"value": "150"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 13:28:10 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"user\": {\n            \"id\": \"69ded4f0-842f-44bb-96dc-1700abf9b9f8\",\n            \"name\": \"kasir-rahayu\",\n            \"email\": \"kasirrahayu@mail.com\",\n            \"role\": \"kasir\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "User list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users?q=kasir-rahayu&p=1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "kasir-rahayu"
+								},
+								{
+									"key": "p",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users?q=kasir-rahayu&p=1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "kasir-rahayu"
+										},
+										{
+											"key": "p",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "content-length",
+									"value": "196"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 13:28:43 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"users\": [\n            {\n                \"id\": \"69ded4f0-842f-44bb-96dc-1700abf9b9f8\",\n                \"name\": \"kasir-rahayu\",\n                \"email\": \"kasirrahayu@mail.com\",\n                \"role\": \"kasir\"\n            }\n        ],\n        \"meta\": {\n            \"totalPages\": 1,\n            \"total\": 1,\n            \"page\": 1\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Rahayu-kasir\",\r\n    \"email\": \"rjkasir@mail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users/69ded4f0-842f-44bb-96dc-1700abf9b9f8",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"69ded4f0-842f-44bb-96dc-1700abf9b9f8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update user",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Rahayu-kasir\",\r\n    \"email\": \"rjkasir@mail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/69ded4f0-842f-44bb-96dc-1700abf9b9f8",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"69ded4f0-842f-44bb-96dc-1700abf9b9f8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "86"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 13:33:21 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User berhasil diupdate\",\n    \"data\": {\n        \"name\": \"Rahayu-kasir\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/69ded4f0-842f-44bb-96dc-1700abf9b9f8",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"69ded4f0-842f-44bb-96dc-1700abf9b9f8"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete user",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/69ded4f0-842f-44bb-96dc-1700abf9b9f8",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"69ded4f0-842f-44bb-96dc-1700abf9b9f8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "54"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 13:33:50 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"User berhasil dihapus\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Units",
+			"item": [
+				{
+					"name": "Add unit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Cardigan\",\r\n    \"description\": \"Outer yang terbuat dari bahan rajut. Bahan rajut yang tebal dan nyaman dipakai membuat kamu terlindungi dari angin atau cuaca dingin.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/units",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"units"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add Unit",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Cardigan\",\r\n    \"description\": \"Outer yang terbuat dari bahan rajut. Bahan rajut yang tebal dan nyaman dipakai membuat kamu terlindungi dari angin atau cuaca dingin.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/units",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"units"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "133"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 13:58:59 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Unit berhasil ditambahkan\",\n    \"data\": {\n        \"unitId\": \"96523bc4-94c9-426d-814e-153a9b4e5d5d\",\n        \"name\": \"Cardigan\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Detail unit",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/units/96523bc4-94c9-426d-814e-153a9b4e5d5d",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"units",
+								"96523bc4-94c9-426d-814e-153a9b4e5d5d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Detail unit",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/units/96523bc4-94c9-426d-814e-153a9b4e5d5d",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"units",
+										"96523bc4-94c9-426d-814e-153a9b4e5d5d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,Accept-Encoding,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "content-length",
+									"value": "142"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:00:16 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"unit\": {\n            \"name\": \"Cardigan\",\n            \"description\": \"Outer yang terbuat dari bahan rajut. Bahan rajut yang tebal dan nyaman dipakai membuat kamu terlindungi dari angin atau cuaca dingin.\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update unit",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"name\": \"Sweater\",\r\n   \"description\": \"Pakaian lengan panjang yang berfungsi menghangatkan tubuh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/units/96523bc4-94c9-426d-814e-153a9b4e5d5d",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"units",
+								"96523bc4-94c9-426d-814e-153a9b4e5d5d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update unit",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"name\": \"Sweater\",\r\n   \"description\": \"Pakaian lengan panjang yang berfungsi menghangatkan tubuh\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/units/96523bc4-94c9-426d-814e-153a9b4e5d5d",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"units",
+										"96523bc4-94c9-426d-814e-153a9b4e5d5d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "46"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:01:04 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"name\": \"Sweater\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete unit",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/units/96523bc4-94c9-426d-814e-153a9b4e5d5d",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"units",
+								"96523bc4-94c9-426d-814e-153a9b4e5d5d"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete unit",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/units/96523bc4-94c9-426d-814e-153a9b4e5d5d",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"units",
+										"96523bc4-94c9-426d-814e-153a9b4e5d5d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "30"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:01:19 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Add category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Outer\",\r\n    \"description\": \"Pakaian outer khusus lokal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/categories",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add category",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Outer\",\r\n    \"description\": \"Pakaian outer khusus lokal\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categories",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "138"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 13:57:24 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Category berhasil ditambahkan\",\n    \"data\": {\n        \"categoryId\": \"7a1037d2-5895-471d-a0d0-3bac1387f829\",\n        \"name\": \"Outer\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Detail category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/categories/7a1037d2-5895-471d-a0d0-3bac1387f829",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categories",
+								"7a1037d2-5895-471d-a0d0-3bac1387f829"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Detail category",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/categories/7a1037d2-5895-471d-a0d0-3bac1387f829",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										"7a1037d2-5895-471d-a0d0-3bac1387f829"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "content-length",
+									"value": "100"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:10:17 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"category\": {\n            \"name\": \"Outer\",\n            \"description\": \"Pakaian outer khusus lokal\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update category",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Atasan\",\r\n    \"description\": \"Jenis pakaian atasan produk lokal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/categories/7a1037d2-5895-471d-a0d0-3bac1387f829",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categories",
+								"7a1037d2-5895-471d-a0d0-3bac1387f829"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update category",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Atasan\",\r\n    \"description\": \"Jenis pakaian atasan produk lokal\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categories/7a1037d2-5895-471d-a0d0-3bac1387f829",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										"7a1037d2-5895-471d-a0d0-3bac1387f829"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "45"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:12:58 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"name\": \"Atasan\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete category",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/categories/7a1037d2-5895-471d-a0d0-3bac1387f829",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"categories",
+								"7a1037d2-5895-471d-a0d0-3bac1387f829"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete category",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/categories/7a1037d2-5895-471d-a0d0-3bac1387f829",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										"7a1037d2-5895-471d-a0d0-3bac1387f829"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "30"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:14:21 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "Add customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jesica\",\r\n    \"phone\": \"08234567834\",\r\n   \"address\": \"Cimahi\",\r\n   \"description\": \"Pelanggan tetap\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/customers",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add customer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Jesica\",\r\n    \"phone\": \"08234567834\",\r\n   \"address\": \"Cimahi\",\r\n   \"description\": \"Pelanggan tetap\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customers"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "139"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:31:45 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Customer berhasil ditambahkan\",\n    \"data\": {\n        \"customerId\": \"6b10bf05-c02f-4e35-b539-b4e087d569f2\",\n        \"name\": \"Jesica\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Detail customer",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/customers/6b10bf05-c02f-4e35-b539-b4e087d569f2",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"customers",
+								"6b10bf05-c02f-4e35-b539-b4e087d569f2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Detail customer",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/customers/6b10bf05-c02f-4e35-b539-b4e087d569f2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customers",
+										"6b10bf05-c02f-4e35-b539-b4e087d569f2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "content-length",
+									"value": "131"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:33:57 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"customer\": {\n            \"name\": \"Jesica\",\n            \"phone\": \"08234567834\",\n            \"address\": \"Cimahi\",\n            \"description\": \"Pelanggan tetap\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update customer",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jesica\",\r\n    \"phone\": \"08234567834\",\r\n   \"address\": \"Bandung\",\r\n   \"description\": \"Pelanggan prioritas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/customers/6b10bf05-c02f-4e35-b539-b4e087d569f2",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"customers",
+								"6b10bf05-c02f-4e35-b539-b4e087d569f2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update customer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Jesica\",\r\n    \"phone\": \"08234567834\",\r\n   \"address\": \"Bandung\",\r\n   \"description\": \"Pelanggan prioritas\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/customers/6b10bf05-c02f-4e35-b539-b4e087d569f2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customers",
+										"6b10bf05-c02f-4e35-b539-b4e087d569f2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "45"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:35:47 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"name\": \"Jesica\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete customer",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/customers/6b10bf05-c02f-4e35-b539-b4e087d569f2",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"customers",
+								"6b10bf05-c02f-4e35-b539-b4e087d569f2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete customer",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/customers/6b10bf05-c02f-4e35-b539-b4e087d569f2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"customers",
+										"6b10bf05-c02f-4e35-b539-b4e087d569f2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "30"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:36:22 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {}\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Add product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"category_id\" : \"dacc70d9-3b85-4542-a189-f7e123181d5c\",\r\n   \"code\": \"ATA1234\",\r\n   \"name\": \"Smith\",\r\n   \"price\": \"110500\",\r\n   \"cost\": \"100000\",\r\n   \"stock\": \"80\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/products",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add product",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"category_id\" : \"dacc70d9-3b85-4542-a189-f7e123181d5c\",\r\n   \"code\": \"ATA1234\",\r\n   \"name\": \"Smith\",\r\n   \"price\": \"110500\",\r\n   \"cost\": \"100000\",\r\n   \"stock\": \"80\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/products",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "136"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:41:03 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Product berhasil ditambahkan\",\n    \"data\": {\n        \"productId\": \"fa9179aa-3d30-452d-8307-8a991a7e6dbf\",\n        \"name\": \"Smith\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Detail product",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/products/fa9179aa-3d30-452d-8307-8a991a7e6dbf",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products",
+								"fa9179aa-3d30-452d-8307-8a991a7e6dbf"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Detail product",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/products/fa9179aa-3d30-452d-8307-8a991a7e6dbf",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products",
+										"fa9179aa-3d30-452d-8307-8a991a7e6dbf"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,Accept-Encoding,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "content-length",
+									"value": "170"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:42:37 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"product\": {\n            \"code\": \"ATA1234\",\n            \"name\": \"Smith\",\n            \"description\": null,\n            \"price\": 110500,\n            \"cost\": 100000,\n            \"cost_average\": null,\n            \"category_name\": \"Outer\",\n            \"category_id\": \"dacc70d9-3b85-4542-a189-f7e123181d5c\",\n            \"stock\": 80\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"category_id\" : \"dacc70d9-3b85-4542-a189-f7e123181d5c\",\r\n   \"code\": \"ATA1234\",\r\n   \"name\": \"Smith\",\r\n   \"price\": \"110000\",\r\n   \"cost\": \"100000\",\r\n   \"stock\": \"30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/products/fa9179aa-3d30-452d-8307-8a991a7e6dbf",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"products",
+								"fa9179aa-3d30-452d-8307-8a991a7e6dbf"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update customer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"category_id\" : \"dacc70d9-3b85-4542-a189-f7e123181d5c\",\r\n   \"code\": \"ATA1234\",\r\n   \"name\": \"Smith\",\r\n   \"price\": \"110000\",\r\n   \"cost\": \"100000\",\r\n   \"stock\": \"30\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/products/fa9179aa-3d30-452d-8307-8a991a7e6dbf",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"products",
+										"fa9179aa-3d30-452d-8307-8a991a7e6dbf"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "82"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 14:46:47 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Product berhasil diupdate\",\n    \"data\": {\n        \"name\": \"Smith\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzExNzAxNn0.vZsfdQdbwilitG9jTPHEEwN7z_wUouqhiPzAQzVbpUI",
+								"type": "text"
+							}
+						]
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Add sales",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"officeId\": \"5a158665-a90a-4f98-9b60-e1d4177bad24\",\r\n   \"customerId\": \"e755136b-e0e4-4f65-b21e-9c4e76813513\",\r\n   \"date\": \"2023-09-01\",\r\n   \"invoice\": \"INV001\",\r\n   \"amount\": 1100000,\r\n   \"discount\": 0,\r\n   \"description\": \"Pembelian tetap\",\r\n   \"items\" : [\r\n       {\r\n           \"productId\": \"fa9179aa-3d30-452d-8307-8a991a7e6dbf\",\r\n           \"quantity\": 10,\r\n           \"price\": 110000\r\n       }\r\n   ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/sales",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sales"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add sales",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"officeId\": \"5a158665-a90a-4f98-9b60-e1d4177bad24\",\r\n   \"customerId\": \"e755136b-e0e4-4f65-b21e-9c4e76813513\",\r\n   \"date\": \"2023-09-01\",\r\n   \"invoice\": \"INV001\",\r\n   \"amount\": 1100000,\r\n   \"discount\": 0,\r\n   \"description\": \"Pembelian tetap\",\r\n   \"items\" : [\r\n       {\r\n           \"productId\": \"fa9179aa-3d30-452d-8307-8a991a7e6dbf\",\r\n           \"quantity\": 10,\r\n           \"price\": 110000\r\n       }\r\n   ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/sales",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sales"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "111"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 15:15:52 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"transaksi ditambahkan\",\n    \"data\": {\n        \"saleId\": \"e4694c49-9a84-4a81-a738-9c828a9f88b3\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "List sale data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/sales?startDate=2023-09-01&endDate=2023-09-02",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sales"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2023-09-01",
+									"description": "Start date"
+								},
+								{
+									"key": "endDate",
+									"value": "2023-09-02",
+									"description": "End date"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List sale data",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/sales?startDate=2023-09-01&endDate=2023-09-02",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sales"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-09-01",
+											"description": "Start date"
+										},
+										{
+											"key": "endDate",
+											"value": "2023-09-02",
+											"description": "End date"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,Accept-Encoding,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "content-length",
+									"value": "239"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 15:16:05 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"sales\": [\n            {\n                \"id\": \"e4694c49-9a84-4a81-a738-9c828a9f88b3\",\n                \"invoice\": \"INV001\",\n                \"date\": \"2023-08-31T17:00:00.000Z\",\n                \"amount\": 1100000,\n                \"office_name\": \"office-Rahayu Jaya\",\n                \"casier\": \"Rahayu Jaya\",\n                \"customer_name\": \"Jesica\"\n            },\n            {\n                \"id\": \"2f926697-3e30-4b61-adf6-52db8e5ad183\",\n                \"invoice\": \"INV001\",\n                \"date\": \"2023-08-31T17:00:00.000Z\",\n                \"amount\": 1100000,\n                \"office_name\": \"office-Rahayu Jaya\",\n                \"casier\": \"Rahayu Jaya\",\n                \"customer_name\": null\n            }\n        ],\n        \"meta\": {\n            \"page\": 1,\n            \"total\": 2,\n            \"totalPages\": 1\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Sale order data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/sales/e4694c49-9a84-4a81-a738-9c828a9f88b3",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"sales",
+								"e4694c49-9a84-4a81-a738-9c828a9f88b3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sale order data",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/sales/e4694c49-9a84-4a81-a738-9c828a9f88b3",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"sales",
+										"e4694c49-9a84-4a81-a738-9c828a9f88b3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,Accept-Encoding,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "content-length",
+									"value": "285"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 15:19:50 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"sale\": {\n            \"date\": \"2023-08-31T17:00:00.000Z\",\n            \"invoice\": \"INV001\",\n            \"description\": \"Pembelian tetap\",\n            \"amount\": 1100000,\n            \"discount\": 0,\n            \"casier\": \"Rahayu Jaya\",\n            \"office_name\": \"office-Rahayu Jaya\",\n            \"customer_id\": \"e755136b-e0e4-4f65-b21e-9c4e76813513\",\n            \"customer_name\": \"Jesica\",\n            \"items\": [\n                {\n                    \"id\": \"fa9179aa-3d30-452d-8307-8a991a7e6dbf\",\n                    \"code\": \"ATA1234\",\n                    \"name\": \"Smith\",\n                    \"quantity\": 10,\n                    \"price\": 110000\n                }\n            ]\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Add purchases",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"officeId\": \"5a158665-a90a-4f98-9b60-e1d4177bad24\",\r\n   \"date\": \"2023-08-31T17:00:00.000Z\",\r\n   \"invoice\": \"INV001\",\r\n   \"amount\": 1100000,\r\n   \"discount\": 0,\r\n   \"description\": \"Lunas\",\r\n   \"items\" : [\r\n       {\r\n           \"productId\": \"fa9179aa-3d30-452d-8307-8a991a7e6dbf\",\r\n           \"quantity\": 10,\r\n           \"cost\": 110000\r\n       }\r\n   ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/purchases",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"purchases"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add purchases",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"officeId\": \"5a158665-a90a-4f98-9b60-e1d4177bad24\",\r\n   \"date\": \"2023-08-31T17:00:00.000Z\",\r\n   \"invoice\": \"INV001\",\r\n   \"amount\": 1100000,\r\n   \"discount\": 0,\r\n   \"description\": \"Lunas\",\r\n   \"items\" : [\r\n       {\r\n           \"productId\": \"fa9179aa-3d30-452d-8307-8a991a7e6dbf\",\r\n           \"quantity\": 10,\r\n           \"cost\": 110000\r\n       }\r\n   ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/purchases",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"purchases"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "content-length",
+									"value": "115"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 15:23:37 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"transaksi ditambahkan\",\n    \"data\": {\n        \"purchaseId\": \"9ab3dd60-d079-4662-a053-266d1441619a\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Detail purchase",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/purchases/9ab3dd60-d079-4662-a053-266d1441619a",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"purchases",
+								"9ab3dd60-d079-4662-a053-266d1441619a"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Detail purchases",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.92PLVnLJR9WujG884daCPYevbjFJ_oTEa4iYkmrY-zs",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/purchases/9ab3dd60-d079-4662-a053-266d1441619a",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"purchases",
+										"9ab3dd60-d079-4662-a053-266d1441619a"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "vary",
+									"value": "origin,Accept-Encoding,User-Agent"
+								},
+								{
+									"key": "access-control-expose-headers",
+									"value": "WWW-Authenticate,Server-Authorization"
+								},
+								{
+									"key": "cache-control",
+									"value": "no-cache"
+								},
+								{
+									"key": "accept-ranges",
+									"value": "bytes"
+								},
+								{
+									"key": "content-length",
+									"value": "234"
+								},
+								{
+									"key": "content-encoding",
+									"value": "br"
+								},
+								{
+									"key": "date",
+									"value": "Thu, 12 Oct 2023 15:24:32 GMT"
+								},
+								{
+									"key": "server",
+									"value": "LiteSpeed"
+								},
+								{
+									"key": "x-powered-by",
+									"value": "Niagahoster"
+								},
+								{
+									"key": "strict-transport-security",
+									"value": "max-age=31536000; includeSubDomains; preload"
+								},
+								{
+									"key": "x-xss-protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "x-content-type-options",
+									"value": "nosniff"
+								},
+								{
+									"key": "alt-svc",
+									"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"purchase\": {\n            \"date\": \"2023-08-31T10:00:00.000Z\",\n            \"invoice\": \"INV001\",\n            \"description\": \"Lunas\",\n            \"amount\": 1100000,\n            \"discount\": 0,\n            \"creator\": \"Rahayu Jaya\",\n            \"office_name\": \"office-Rahayu Jaya\",\n            \"items\": [\n                {\n                    \"id\": \"fa9179aa-3d30-452d-8307-8a991a7e6dbf\",\n                    \"code\": \"ATA1234\",\n                    \"name\": \"Smith\",\n                    \"quantity\": 10,\n                    \"cost\": 110000\n                }\n            ]\n        }\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.9_bZYmEDNyrVdxuJYuw5FyOL5f1wc_QrUdel8YLucSY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/authentications",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"authentications"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Logout",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI2ZjllNjZkLWFlNzgtNGYxNy05OTM4LTE4Y2ZiYTg4MTJlZSIsImNvbXBhbnlJZCI6IjE0NWY5NjA5LWU5OTUtNDliMS04MTRlLTgzNDI3ZTQ5NWZmZiIsImlhdCI6MTY5NzEyMjcxNX0.9_bZYmEDNyrVdxuJYuw5FyOL5f1wc_QrUdel8YLucSY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/authentications",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"authentications"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "vary",
+							"value": "origin,User-Agent"
+						},
+						{
+							"key": "access-control-expose-headers",
+							"value": "WWW-Authenticate,Server-Authorization"
+						},
+						{
+							"key": "cache-control",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-length",
+							"value": "63"
+						},
+						{
+							"key": "date",
+							"value": "Thu, 12 Oct 2023 15:25:28 GMT"
+						},
+						{
+							"key": "server",
+							"value": "LiteSpeed"
+						},
+						{
+							"key": "x-powered-by",
+							"value": "Niagahoster"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000, h3-Q050=\":443\"; ma=2592000, h3-Q046=\":443\"; ma=2592000, h3-Q043=\":443\"; ma=2592000, quic=\":443\"; ma=2592000; v=\"43,46\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Refresh token berhasil dihapus\"\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://kasir-api.belajarqa.com"
+		}
+	]
+}
